@@ -308,13 +308,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-family: Papyrus, fantasy;
+  font-size: 2rem; /* adjust for mobile first */
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  margin-top: 6.0rem;
-  margin-bottom: 8.0rem;
-  text-wrap: pretty;
-  font-family: "Inter", fantasy;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
   font-weight: 900;
   color: white;
   text-align: center;
@@ -322,6 +321,7 @@ h1, h2, h3, h4, h5, h6 {
     0 0 2px rgba(255,255,255,0.5),
     0 0 5px rgba(255,255,255,0.3),
     0 0 10px rgba(255,255,255,0.2);
+  text-wrap: pretty;
 }
 
 /* per-letter orbital + curved effect */
