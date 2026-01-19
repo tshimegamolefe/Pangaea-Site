@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="Local-first, identity-minimal coordination substrate. Built for survivability, not engagement.">
+        <meta name="theme-color" content="#141414">
+        <title>PANGAEA // Coordination Under Constraint</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;700&family=Geist+Mono:wght@400;500&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+    <body>
+        <main>
+            <!-- HERO SECTION -->
+            <section class="hero">
+                <header class="status-bar">
+                    <div class="status-bar-inner">
+                        <div class="status-left">
+                            <div class="status-dot pulse"></div>
+                            <span class="logo">PANGAEA</span>
+                        </div>
+                        <div class="status-right">
+                            <span class="hide-mobile">PROTOCOL v0.1</span>
+                            <span class="status-indicator">
+                                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <line x1="1" y1="1" x2="23" y2="23"></line>
+                                    <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+                                    <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+                                    <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+                                    <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+                                    <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                    <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                                </svg>
+                                OFFLINE READY
+                            </span>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="hero-content">
+                    <div class="hero-inner">
+                        <div class="badge">
+                            <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                            COORDINATION SUBSTRATE
+                        </div>
+
+                        <h1 class="hero-title">
+                            <span style="--i:1; --r:-2">P</span>
+                            <span style="--i:0.5; --r:1">A</span>
+                            <span style="--i:0; --r:-1">N</span>
+                            <span style="--i:-0.5; --r:2">G</span>
+                            <span style="--i:-1; --r:0">A</span>
+                            <span style="--i:-0.5; --r:-1">E</span>
+                            <span style="--i:0; --r:1">A</span>
+                        </h1>
+
+                        <p class="hero-description">
+                            Local-first coordination for small groups.<br /> Peer-to-peer messaging. Offline-first. No
+                            central
+                            control. <br />Designed to work
+                            when infrastructure fails.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="https://apps.apple.com/us/app/bitchat-mesh/id6748219622" class="btn btn-primary"
+                                id="ios-link-footer">GET iOS APP</a>
+                            <a href="https://github.com/tshimegamolefe/Pangaea" class="btn btn-outline"
+                                id="github-link-footer" target="_blank" rel="noopener noreferrer">
+                                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                VIEW ON GITHUB
+                            </a>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-value">5-12</div>
+                                <div class="stat-label">CELL SIZE</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value stat-icons">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                                        <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                                    </svg>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <line x1="1" y1="1" x2="23" y2="23"></line>
+                                        <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"></path>
+                                        <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"></path>
+                                        <path d="M10.71 5.05A16 16 0 0 1 22.58 9"></path>
+                                        <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"></path>
+                                        <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                                        <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                                    </svg>
+                                </div>
+                                <div class="stat-label">OFFLINE FIRST</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-value stat-icons">
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg>
+                                </div>
+                                <div class="stat-label">LOCAL DATA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-line">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRINCIPLES SECTION -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            style="color: var(--warning);" aria-hidden="true">
+                            <path
+                                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                            </path>
+                            <line x1="12" y1="9" x2="12" y2="13"></line>
+                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                        </svg>
+                        <h2 class="section-label">DESIGN PRINCIPLES</h2>
+                    </div>
+
+                    <div class="principles-grid">
+                        <div class="principle-card">
+                            <div class="principle-header">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    style="color: var(--destructive);" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                </svg>
+                                <span>THIS NOT</span>
+                            </div>
+                            <ul class="principle-list">
+                                <li><span class="dot destructive"></span>Social network</li>
+                                <li><span class="dot destructive"></span>Marketplace</li>
+                                <li><span class="dot destructive"></span>DAO</li>
+                                <li><span class="dot destructive"></span>Ideological theater</li>
+                            </ul>
+                        </div>
+
+                        <div class="principle-card">
+                            <div class="principle-header">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    style="color: var(--accent);" aria-hidden="true">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                <span>THIS IS</span>
+                            </div>
+                            <ul class="principle-list">
+                                <li><span class="dot accent"></span>Coordination substrate</li>
+                                <li><span class="dot accent"></span>Constraint solver</li>
+                                <li><span class="dot accent"></span>Logistics layer</li>
+                                <li><span class="dot accent"></span>Emergency infrastructure</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tradeoffs-table">
+                        <div class="tradeoffs-header">
+                            <div class="tradeoffs-col">SACRIFICED</div>
+                            <div class="tradeoffs-col">GAINED</div>
+                        </div>
+                        <div class="tradeoffs-row">
+                            <div class="tradeoffs-col muted">Virality</div>
+                            <div class="tradeoffs-col">Survivability</div>
+                        </div>
+                        <div class="tradeoffs-row">
+                            <div class="tradeoffs-col muted">Growth curves</div>
+                            <div class="tradeoffs-col">Fault tolerance</div>
+                        </div>
+                        <div class="tradeoffs-row">
+                            <div class="tradeoffs-col muted">Engagement metrics</div>
+                            <div class="tradeoffs-col">Execution speed</div>
+                        </div>
+                        <div class="tradeoffs-row last">
+                            <div class="tradeoffs-col muted">Monetization hooks</div>
+                            <div class="tradeoffs-col">User autonomy</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INTERFACE SECTION -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="accent-dot"></div>
+                        <h2 class="section-label">INTERFACE</h2>
+                    </div>
+
+                    <p class="section-title">Four surfaces. State over people. Execution over engagement.</p>
+
+                    <!-- Screenshot Carousel -->
+                    <div class="carousel" id="carousel">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-image">
+                                        <img src="/images/1.jpg"
+                                            alt="PANGAEA home screen showing four primary navigation surfaces"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        HOME // State over people. Four surfaces. Large touch targets.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-image">
+                                        <img src="/images/2.jpg"
+                                            alt="PANGAEA screens showing cell status and health indicators"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        CELL STATUS // Health indicators, redundancy gaps, trust state.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-image">
+                                        <img src="/images/3.jpg"
+                                            alt="PANGAEA screens showing initial intake, settings, candidates"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        INTAKE // Initial setup, settings & data, tasks and candidates.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="screenshot-card">
+                                    <div class="screenshot-image">
+                                        <img src="/images/4.jpg" alt="Multiple CELL screens showing operations views"
+                                            loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        OPERATIONS // Maps, comms, resources, task dependencies. All offline-capable.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="15 18 9 12 15 6"></polyline>
+                                </svg>
+                            </button>
+                            <button class="carousel-btn" id="nextBtn" aria-label="Next slide">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="surfaces-grid">
+                        <article class="surface-card">
+                            <div class="surface-header">
+                                <div class="surface-meta">
+                                    <span class="surface-id">01</span>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <path
+                                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <h3 class="surface-name">Capabilities</h3>
+                            </div>
+                            <p class="surface-description">Structured inventory. Skills, tools, resources, availability.
+                                Binary and quantitative. No bios.</p>
+                            <div class="surface-examples">
+                                <div class="example-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>Can repair small engines</div>
+                                <div class="example-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>Has solar inverter</div>
+                                <div class="example-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>Available 10 hrs/week</div>
+                            </div>
+                        </article>
+
+                        <article class="surface-card">
+                            <div class="surface-header">
+                                <div class="surface-meta">
+                                    <span class="surface-id">02</span>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="surface-name">Needs / Tasks</h3>
+                            </div>
+                            <p class="surface-description">Post needs as executable units. Location, deadline, risk,
+                                dependencies. Claimable. Offline creation.</p>
+                            <div class="surface-attributes">
+                                <span class="attr-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>Location</span>
+                                <span class="attr-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>Deadline</span>
+                                <span class="attr-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                    </svg>Risk level</span>
+                            </div>
+                        </article>
+
+                        <article class="surface-card">
+                            <div class="surface-header">
+                                <div class="surface-meta">
+                                    <span class="surface-id">03</span>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="surface-name">Cell</h3>
+                            </div>
+                            <p class="surface-description">Current group composition. Redundancy gaps. Trust state.
+                                Explicit
+                                fragility warnings. No chat-first.</p>
+                            <div class="surface-warnings">
+                                <div class="warning-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                    </svg>2 members have overlapping skills</div>
+                                <div class="warning-item"><svg class="icon-tiny" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                    </svg>No medical capability</div>
+                            </div>
+                        </article>
+
+                        <article class="surface-card">
+                            <div class="surface-header">
+                                <div class="surface-meta">
+                                    <span class="surface-id">04</span>
+                                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                        <line x1="4" y1="22" x2="4" y2="15"></line>
+                                    </svg>
+                                </div>
+                                <h3 class="surface-name">Decisions</h3>
+                            </div>
+                            <p class="surface-description">Propose → Object → Execute. Time-boxed. Silence equals
+                                consent.
+                                Prevents paralysis.</p>
+                            <div class="surface-flow">
+                                <span class="flow-step">Propose</span>
+                                <span class="flow-arrow">→</span>
+                                <span class="flow-step">Object window</span>
+                                <span class="flow-arrow">→</span>
+                                <span class="flow-step">Execute</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Trust indicator -->
+                    <div class="trust-card">
+                        <h3 class="trust-label">TRUST INDICATOR</h3>
+                        <div class="trust-content">
+                            <div class="trust-member">
+                                <div class="trust-avatar">JK</div>
+                                <div class="trust-info">
+                                    <div class="trust-name">Member</div>
+                                    <div class="trust-cell">CELL-7A2F</div>
+                                </div>
+                            </div>
+                            <div class="trust-score">
+                                <div class="score-value"><span class="accent">4</span><span class="muted">/5</span>
+                                </div>
+                                <div class="score-label">commitments completed (last 30 days)</div>
+                            </div>
+                        </div>
+                        <div class="trust-footer">No lifetime scores. No leaderboards. Recent reliability only.</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ARCHITECTURE SECTION -->
+            <section class="section bg-card">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="accent-dot"></div>
+                        <h2 class="section-label">ARCHITECTURE</h2>
+                    </div>
+
+                    <p class="section-title">Designed for degradation. Functions when infrastructure fails.</p>
+
+                    <div class="arch-grid">
+                        <div class="arch-card">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                            <h3>Local-First</h3>
+                            <p>Data lives on devices. Sync is peer-to-peer. Central servers are optional relays, not
+                                authorities.</p>
+                        </div>
+                        <div class="arch-card">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path
+                                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+                                </path>
+                            </svg>
+                            <h3>Identity-Minimal</h3>
+                            <p>No global usernames. No follower graphs. Cryptographic keys represent membership. Keys
+                                rotate.</p>
+                        </div>
+                        <div class="arch-card">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <circle cx="12" cy="18" r="3"></circle>
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="18" cy="6" r="3"></circle>
+                                <path d="M18 9a9 9 0 0 1-9 9"></path>
+                                <path d="M6 9a9 9 0 0 0 9 9"></path>
+                            </svg>
+                            <h3>Forkable</h3>
+                            <p>Cells can fork. Members can leave with their data. No update is mandatory. No kill switch
+                                exists.</p>
+                        </div>
+                        <div class="arch-card">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                                <line x1="9" y1="1" x2="9" y2="4"></line>
+                                <line x1="15" y1="1" x2="15" y2="4"></line>
+                                <line x1="9" y1="20" x2="9" y2="23"></line>
+                                <line x1="15" y1="20" x2="15" y2="23"></line>
+                                <line x1="20" y1="9" x2="23" y2="9"></line>
+                                <line x1="20" y1="14" x2="23" y2="14"></line>
+                                <line x1="1" y1="9" x2="4" y2="9"></line>
+                                <line x1="1" y1="14" x2="4" y2="14"></line>
+                            </svg>
+                            <h3>Composition Engine</h3>
+                            <p>Constraint satisfaction + graph optimization. Outputs viable cells ranked by resilience,
+                                not
+                                popularity.</p>
+                        </div>
+                    </div>
+
+                    <!-- Composition engine detail -->
+                    <div class="composition-detail">
+                        <div class="composition-header">
+                            <h3>COMPOSITION ENGINE</h3>
+                            <p>Group formation as constraint-satisfaction, not matchmaking.</p>
+                        </div>
+                        <div class="composition-body">
+                            <div class="composition-col">
+                                <div class="composition-label">INPUTS</div>
+                                <ul class="composition-list">
+                                    <li><span class="dot muted"></span>Skills graph</li>
+                                    <li><span class="dot muted"></span>Dependency graph</li>
+                                    <li><span class="dot muted"></span>Geography</li>
+                                    <li><span class="dot muted"></span>Redundancy thresholds</li>
+                                </ul>
+                            </div>
+                            <div class="composition-col">
+                                <div class="composition-label">OPTIMIZES FOR</div>
+                                <ul class="composition-list">
+                                    <li><span class="dot accent"></span>Complementary skills</li>
+                                    <li><span class="dot accent"></span>No single point of failure</li>
+                                    <li><span class="dot accent"></span>Geographic proximity</li>
+                                    <li><span class="dot accent"></span>Minimal shared dependencies</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="composition-footer">
+                            Output: "This group can function if two members disappear."
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STACK SECTION -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="accent-dot"></div>
+                        <h2 class="section-label">TECHNICAL STACK</h2>
+                    </div>
+
+                    <p class="section-title">Built like emergency infrastructure, not a startup product.</p>
+
+                    <div class="stack-grid">
+                        <div class="stack-card">
+                            <div class="stack-header">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                <span>CLIENT</span>
+                            </div>
+                            <div class="stack-body">
+                                <div class="stack-primary">Native iOS (Swift)</div>
+                                <div class="stack-fallback">Android coming</div>
+                                <ul class="stack-details">
+                                    <li><span class="dot muted"></span>Mobile-first, iOS priority</li>
+                                    <li><span class="dot muted"></span>SQLite with SQLCipher</li>
+                                    <li><span class="dot muted"></span>Everything works offline first</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="stack-card">
+                            <div class="stack-header">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                                <span>NETWORKING</span>
+                            </div>
+                            <div class="stack-body">
+                                <div class="stack-primary">P2P Mesh Protocol</div>
+                                <div class="stack-fallback">LoRa / BLE / Internet</div>
+                                <ul class="stack-details">
+                                    <li><span class="dot muted"></span>Peer-to-peer sync, no central relay</li>
+                                    <li><span class="dot muted"></span>Fallback: LoRa → Bluetooth → Internet</li>
+                                    <li><span class="dot muted"></span>End-to-end encryption everywhere</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="stack-card">
+                            <div class="stack-header">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                                </svg>
+                                <span>BACKEND</span>
+                            </div>
+                            <div class="stack-body">
+                                <div class="stack-primary">Go / Rust</div>
+                                <div class="stack-fallback">Optional, replaceable</div>
+                                <ul class="stack-details">
+                                    <li><span class="dot muted"></span>Rendezvous, relay, encrypted blob store</li>
+                                    <li><span class="dot muted"></span>No business logic authority</li>
+                                    <li><span class="dot muted"></span>Stateless where possible</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="stack-card">
+                            <div class="stack-header">
+                                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    aria-hidden="true">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                                <span>SECURITY</span>
+                            </div>
+                            <div class="stack-body">
+                                <div class="stack-primary">Key-based identity</div>
+                                <div class="stack-fallback">Social key escrow</div>
+                                <ul class="stack-details">
+                                    <li><span class="dot muted"></span>Public/private key pairs per cell</li>
+                                    <li><span class="dot muted"></span>Keys rotate per cell membership</li>
+                                    <li><span class="dot muted"></span>No central kill switch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data model -->
+                    <div class="data-model">
+                        <div class="data-model-header">DATA MODEL</div>
+                        <div class="data-model-grid">
+                            <div class="data-model-item">
+                                <div class="data-model-label">Persistence</div>
+                                <div class="data-model-value">Event-sourced</div>
+                            </div>
+                            <div class="data-model-item">
+                                <div class="data-model-label">Conflicts</div>
+                                <div class="data-model-value">CRDTs</div>
+                            </div>
+                            <div class="data-model-item">
+                                <div class="data-model-label">Versioning</div>
+                                <div class="data-model-value">Explicit</div>
+                            </div>
+                            <div class="data-model-item last">
+                                <div class="data-model-label">Forking</div>
+                                <div class="data-model-value">Native, not exceptional</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- The Sidecar Hardware -->
+                    <div class="sidecar-section">
+                        <div class="sidecar-header">
+                            <div class="sidecar-badge">HARDWARE</div>
+                            <h3>THE SIDECAR</h3>
+                            <p>LoRaWAN Mesh Repeater. Extends range from 50 feet to 5+ miles.</p>
+                        </div>
+                        <div class="sidecar-grid">
+                            <div class="sidecar-details">
+                                <div class="sidecar-detail-item">
+                                    <div class="sidecar-detail-label">CORE</div>
+                                    <div class="sidecar-detail-value">LoRa Radio (915/868 MHz)</div>
+                                </div>
+                                <div class="sidecar-detail-item">
+                                    <div class="sidecar-detail-label">POWER</div>
+                                    <div class="sidecar-detail-value">10,000mAh battery + solar controller</div>
+                                </div>
+                                <div class="sidecar-detail-item">
+                                    <div class="sidecar-detail-label">BUILD</div>
+                                    <div class="sidecar-detail-value">IP67 waterproof, no screen to break</div>
+                                </div>
+                                <div class="sidecar-detail-item">
+                                    <div class="sidecar-detail-label">FIRMWARE</div>
+                                    <div class="sidecar-detail-value">Meshtastic / Reticulum compatible</div>
+                                </div>
+                                <div class="sidecar-detail-item">
+                                    <div class="sidecar-detail-label">I/O</div>
+                                    <div class="sidecar-detail-value">USB-C + physical purge button</div>
+                                </div>
+                                <div class="sidecar-detail-item">
+                                    <div class="sidecar-detail-label">SHELF LIFE</div>
+                                    <div class="sidecar-detail-value">10+ years (replaceable 18650 cells)</div>
+                                </div>
+                            </div>
+                            <div class="sidecar-philosophy">
+                                <div class="sidecar-quote">
+                                    "The app is free. If you want your cell to communicate over 5 miles instead of 50
+                                    feet,
+                                    buy the Sidecar."
+                                </div>
+                                <ul class="sidecar-features">
+                                    <li><span class="dot accent"></span>Holds identity and mesh state</li>
+                                    <li><span class="dot accent"></span>Works as "dead drop" store-and-forward</li>
+                                    <li><span class="dot accent"></span>Phone is disposable, Sidecar persists</li>
+                                    <li><span class="dot accent"></span>Pangaea-compatible out of the box</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infrastructure -->
+                    <div class="infrastructure">
+                        <h3>INFRASTRUCTURE REQUIREMENTS</h3>
+                        <div class="infra-tags">
+                            <span class="infra-tag">Cheap, disposable servers</span>
+                            <span class="infra-tag">Multiple jurisdictions</span>
+                            <span class="infra-tag">Self-hostable</span>
+                            <span class="infra-tag">No cloud lock-in</span>
+                            <span class="infra-tag">Open protocol</span>
+                            <span class="infra-tag">Clients verify everything</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-cta">
+                    <div class="container text-center">
+                        <p class="section-label">GET STARTED</p>
+                        <h2 class="footer-title">
+                            No personality tests.<br>
+                            No values essays.
+                        </h2>
+                        <p class="footer-description">
+                            A short constraint intake: location radius, skills, non-negotiables,
+                            risk tolerance, availability. Done in minutes.
+                        </p>
+
+                        <div class="footer-buttons">
+                            <a href="https://apps.apple.com/us/app/bitchat-mesh/id6748219622" class="btn btn-primary"
+                                id="ios-link-footer">GET iOS APP</a>
+                            <a href="https://github.com/tshimegamolefe/Pangaea" class="btn btn-outline"
+                                id="github-link-footer" target="_blank" rel="noopener noreferrer">
+                                <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                VIEW ON GITHUB
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bar">
+                    <div class="container footer-bar-inner">
+                        <div class="footer-left">
+                            <span class="logo">PANGAEA</span>
+                            <span class="muted">Protocol v0.1 // Open Source</span>
+                        </div>
+                        <div class="footer-right">
+                            <a href="https://github.com/tshimegamolefe/Pangaea" class="footer-link"
+                                id="github-link-bottom" target="_blank" rel="noopener noreferrer">
+                                <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Source
+                            </a>
+                            <a href="https://apps.apple.com/us/app/bitchat-mesh/id6748219622" class="footer-link"
+                                id="ios-link-bottom">
+                                <svg class="icon-tiny" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" aria-hidden="true">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                                iOS App
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-notice">
+                    <div class="container">
+                        <p>This software does not save people. It removes friction so people can save themselves
+                            together.
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
