@@ -447,9 +447,34 @@
                         <h2 class="section-label">ARCHITECTURE</h2>
                     </div>
 
-                    <p class="section-title">Designed for degradation. Functions when infrastructure fails.</p>
+                    <p class="section-title">Open for trust. Closed for execution. Optimized for survival.</p>
 
                     <div class="arch-grid">
+                        <div class="arch-card border-accent">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path
+                                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
+                                </path>
+                            </svg>
+                            <h3>The Substrate</h3>
+                            <p>A 1:1 fork of the Bitchat core. Handles Noise Protocol handshakes, P2P transport, and
+                                local data
+                                persistence. Fully auditable, stateless, and forkable.</p>
+                        </div>
+
+                        <div class="arch-card">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                                <rect x="9" y="9" width="6" height="6"></rect>
+                            </svg>
+                            <h3>The Intelligence</h3>
+                            <p>Pangaea’s unique coordination layer. Decodes encrypted substrate events into the Cell
+                                State,
+                                skill-matching graphs, and survival-task dependencies.</p>
+                        </div>
+
                         <div class="arch-card">
                             <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" aria-hidden="true">
@@ -458,82 +483,49 @@
                                 <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                             </svg>
                             <h3>Local-First</h3>
-                            <p>Data lives on devices. Sync is peer-to-peer. Central servers are optional relays, not
-                                authorities.</p>
+                            <p>No global usernames. No centralized databases. All coordination logic and identity keys
+                                live
+                                on-device, never on a server.</p>
                         </div>
                         <div class="arch-card">
                             <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" aria-hidden="true">
-                                <path
-                                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4">
-                                </path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 2v3m0 14v3M2 12h3m14 0h3m-3-7l-2 2m-10 10l-2 2m14 0l-2-2M7 7L5 5"></path>
                             </svg>
-                            <h3>Identity-Minimal</h3>
-                            <p>No global usernames. No follower graphs. Cryptographic keys represent membership. Keys
-                                rotate.</p>
-                        </div>
-                        <div class="arch-card">
-                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <circle cx="12" cy="18" r="3"></circle>
-                                <circle cx="6" cy="6" r="3"></circle>
-                                <circle cx="18" cy="6" r="3"></circle>
-                                <path d="M18 9a9 9 0 0 1-9 9"></path>
-                                <path d="M6 9a9 9 0 0 0 9 9"></path>
-                            </svg>
-                            <h3>Forkable</h3>
-                            <p>Cells can fork. Members can leave with their data. No update is mandatory. No kill switch
-                                exists.</p>
-                        </div>
-                        <div class="arch-card">
-                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2" aria-hidden="true">
-                                <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                                <rect x="9" y="9" width="6" height="6"></rect>
-                                <line x1="9" y1="1" x2="9" y2="4"></line>
-                                <line x1="15" y1="1" x2="15" y2="4"></line>
-                                <line x1="9" y1="20" x2="9" y2="23"></line>
-                                <line x1="15" y1="20" x2="15" y2="23"></line>
-                                <line x1="20" y1="9" x2="23" y2="9"></line>
-                                <line x1="20" y1="14" x2="23" y2="14"></line>
-                                <line x1="1" y1="9" x2="4" y2="9"></line>
-                                <line x1="1" y1="14" x2="4" y2="14"></line>
-                            </svg>
-                            <h3>Composition Engine</h3>
-                            <p>Constraint satisfaction + graph optimization. Outputs viable cells ranked by resilience,
-                                not
-                                popularity.</p>
+                            <h3>Mesh Topology</h3>
+                            <p>Designed for total infrastructure failure. Syncs via LoRa, Bluetooth, or LAN. Cells
+                                function as self-sufficient
+                                enclaves when the world goes dark.</p>
                         </div>
                     </div>
 
-                    <!-- Composition engine detail -->
                     <div class="composition-detail">
                         <div class="composition-header">
-                            <h3>COMPOSITION ENGINE</h3>
-                            <p>Group formation as constraint-satisfaction, not matchmaking.</p>
+                            <div class="badge">EXECUTION LAYER</div>
+                            <h3>THE COMPOSITION ENGINE</h3>
+                            <p>Private group formation via constraint-satisfaction, not social matchmaking.</p>
                         </div>
                         <div class="composition-body">
                             <div class="composition-col">
-                                <div class="composition-label">INPUTS</div>
+                                <div class="composition-label">DECODES (OPEN)</div>
                                 <ul class="composition-list">
-                                    <li><span class="dot muted"></span>Skills graph</li>
-                                    <li><span class="dot muted"></span>Dependency graph</li>
-                                    <li><span class="dot muted"></span>Geography</li>
-                                    <li><span class="dot muted"></span>Redundancy thresholds</li>
+                                    <li><span class="dot muted"></span>Encrypted Skill Graphs</li>
+                                    <li><span class="dot muted"></span>Proximity Envelopes</li>
+                                    <li><span class="dot muted"></span>Dependency Events</li>
                                 </ul>
                             </div>
                             <div class="composition-col">
-                                <div class="composition-label">OPTIMIZES FOR</div>
+                                <div class="composition-label">OPTIMIZES (CLOSED)</div>
                                 <ul class="composition-list">
-                                    <li><span class="dot accent"></span>Complementary skills</li>
-                                    <li><span class="dot accent"></span>No single point of failure</li>
-                                    <li><span class="dot accent"></span>Geographic proximity</li>
-                                    <li><span class="dot accent"></span>Minimal shared dependencies</li>
+                                    <li><span class="dot accent"></span>Cell Fragility Analysis</li>
+                                    <li><span class="dot accent"></span>Redundancy Gap Logic</li>
+                                    <li><span class="dot accent"></span>Execution Flow Scoring</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="composition-footer">
-                            Output: "This group can function if two members disappear."
+                            The engine decodes the mesh to provide a real-time <strong>Cell State</strong>.
                         </div>
                     </div>
                 </div>
