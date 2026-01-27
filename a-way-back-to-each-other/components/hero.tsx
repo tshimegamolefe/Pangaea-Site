@@ -31,7 +31,7 @@ const Hero = () => {
 
           {/* Slogan */}
           <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-foreground/90 mb-4">
-            Wherever people exist.
+            Wherever humans are.
           </p>
 
           {/* Description */}
