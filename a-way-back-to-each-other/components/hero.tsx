@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Users, ArrowDown } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import Image from "next/image";
 
 const Hero = () => {
@@ -7,13 +7,13 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <Image 
-          src={"/a-way-back.png"} 
-          alt="Community gathering together" 
+        <Image
+          src={"/pangaea-xl.jpg"}
+          alt="Blackouts. Borders. Orbits. Oceans. Time gaps."
           className="h-full w-full object-cover"
           fill
         />
-        <div className="absolute inset-0 bg-linear-to-b from-background/70 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-linear-to-b from-background/0 via-background/0 to-background" />
       </div>
 
       {/* Content */}
@@ -21,53 +21,57 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 backdrop-blur-[1.5px] rounded-full px-4 py-2 mb-8 shadow-none border-none">
-            <Heart className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-foreground">Building bridges, not walls</span>
+            <span className="text-sm font-medium text-foreground">Communication without infrastructure</span>
           </div>
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-foreground mb-6 leading-tight">
             Pangaea
           </h1>
-          
+
           {/* Slogan */}
-          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-foreground/90 mb-4 italic">
-            A way back to each other
+          <p className="text-2xl md:text-3xl lg:text-4xl font-serif text-foreground/90 mb-4">
+            Wherever people exist.
           </p>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-foreground/70 mb-10 leading-relaxed text-balance">
-            When the world feels divided, we find strength in coming together. 
-            Pangaea connects neighbors, families, and communities to work as one.
+            Pangaea enables communication and coordination without relying on networks that can be shut down, monitored, or removed.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 mt-44 md:mt-72">
-             <Button variant="warm" size="xl"  asChild>
+            <Button variant="warm" size="xl" asChild>
               <a href="https://apps.apple.com/us/app/bitchat-mesh/id6748219622">
-                <Users className="w-5 h-5 mr-2" />
-                Join Your Community
+                <Image
+                  src="/android-chrome-512x512.png"
+                  alt="Logo"
+                  width={20}
+                  height={20}
+                  className="w-5 h-5 rounded-full object-cover"
+                />
+                Try Pangaea
               </a>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="#how-it-works">Learn How It Works</a>
             </Button>
-           
+
           </div>
 
           {/* Trust Indicators */}
           <div className="flex flex-wrap justify-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-secondary" />
-              <span>Works offline</span>
+              <span>No internet required</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary" />
-              <span>Private & secure</span>
+              <span>End-to-end encrypted</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-accent" />
-              <span>Free to use</span>
+              <span>No accounts</span>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Download, Heart } from "lucide-react";
+import Image from "next/image";
 
 const CTASection = () => {
   return (
@@ -7,23 +7,35 @@ const CTASection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-8">
-            <Heart className="w-8 h-8 text-primary" />
+            <Image
+              src="/android-chrome-512x512.png"
+              alt="Logo"
+              width={56}
+              height={56}
+              className="w-14 h-14 rounded-full object-cover"
+            />
           </div>
-          
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6">
-            Start reconnecting today
+
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6 text-balance">
+            When systems fail, this still works.
           </h2>
-          
+
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-            Download Pangaea and take the first step toward building the 
-            community you&apos;ve always wanted. It&apos;s free, private, and made with love.
+            Pangaea is a local-first coordination layer built for outages, censorship, distance, and disruption.
+            It works without permission, servers, or surveillance.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="warm" size="xl" asChild>
               <a href="https://apps.apple.com/us/app/bitchat-mesh/id6748219622">
-                <Download className="w-5 h-5 mr-2" />
-                Download for iOS
+                <Image
+                  src="/android-chrome-512x512.png"
+                  alt="Logo"
+                  width={20}
+                  height={20}
+                  className="w-5 h-5 rounded-full object-cover"
+                />
+                Get Pangaea
               </a>
             </Button>
           </div>

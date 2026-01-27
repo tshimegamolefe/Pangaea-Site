@@ -3,22 +3,22 @@ import { Work_Sans, Lora, Inconsolata } from "next/font/google";
 import "./globals.css";
 
 const workSans = Work_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  subsets: [ "latin" ],
+  weight: [ "400", "500", "600", "700" ],
   variable: "--font-work-sans",
   display: "swap",
 });
 
 const lora = Lora({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  subsets: [ "latin" ],
+  weight: [ "400", "500", "600", "700" ],
   variable: "--font-lora",
   display: "swap",
 });
 
 const inconsolata = Inconsolata({
-  subsets: ["latin"],
-  weight: ["400", "700"],
+  subsets: [ "latin" ],
+  weight: [ "400", "700" ],
   variable: "--font-inconsolata",
   display: "swap",
 });
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: "Pangaea — A Way Back to Each Other",
     description:
       "Building bridges, not walls. A private, community-first way to reconnect with the people around you.",
-    images: ["/a-way-back.png"],
+    images: [ "/a-way-back.png" ],
   },
   robots: {
     index: true,
@@ -76,10 +76,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://pangaea.dev",
   },
-  themeColor: "#F2E6D8", // warm neutral; optional but helps mobile previews
 };
 
-export default function RootLayout({
+export default function RootLayout ({
   children,
 }: {
   children: React.ReactNode;
